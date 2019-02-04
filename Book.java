@@ -65,6 +65,13 @@ class Book
         System.out.println(title);
     }
     
-    //2.85
+    /**
+     * 2.86 - Once the book object is created it is at this point
+     * in time immutable because there are currently no
+     * methods the change variables/fields, only methods to 
+     * view and print them. Since viewing and printing isn't really
+     * mutating a variable, Book is immutable. 
+     */
+    
     
 }
