@@ -14,17 +14,19 @@ class Book
     private String refNumber; //2.88
     private int pages; //2.85
     private int borrowed; //2.91
+    private boolean courseText; //2.92
 
     /**
      * Set the author, title, and pages fields when this object
      * is constructed.
      */
-    public Book(String bookAuthor, String bookTitle, int bookPages)
+    public Book(String bookAuthor, String bookTitle, int bookPages, boolean isCourseText)
     {
         author = bookAuthor;
         title = bookTitle;
         pages = bookPages; //2.85
         refNumber = ""; //2.88
+        courseText = isCourseText; //2.92
     }
 
     // Add the methods here ...
@@ -68,6 +70,13 @@ class Book
      */
     public int getBorrowed(){
         return borrowed;
+    }
+    //2.92
+    /**
+     * provide access to immutable courseText boolean
+     */
+    public boolean isCourseText(){
+        return courseText;
     }
     
     //SETTERS
