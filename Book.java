@@ -11,7 +11,9 @@ class Book
      // The fields.
     private String author;
     private String title;
+    private String refNumber; //2.88
     private int pages; //2.85
+    
 
     /**
      * Set the author, title, and pages fields when this object
@@ -21,7 +23,8 @@ class Book
     {
         author = bookAuthor;
         title = bookTitle;
-        pages = bookPages;//2.85
+        pages = bookPages; //2.85
+        refNumber = ""; //2.88
     }
 
     // Add the methods here ...
@@ -49,6 +52,23 @@ class Book
      */
     public int getPages(){
         return pages;
+    }
+    //2.88
+    /**
+     * provide access to the String holding the nefNumber
+     * @return refNumber
+     */
+    public String getRefNumber(){
+        return refNumber;
+    }
+    
+    //SETTERS
+    //2.88
+    /**
+     * changes value of refNumber
+     */
+    public void setRefNumber(String ref){
+        refNumber = ref;
     }
     
     //PRINTING
