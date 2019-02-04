@@ -93,6 +93,10 @@ class Book
         System.out.println("Title: " + title);
         System.out.println("Author: " + author);
         System.out.println("Pages: " + pages);
+        if(refNumber.equals("")) //2.89
+            System.out.println("Reference Number: ZZZ");
+        else
+            System.out.println("Reference Number: " + refNumber);
     }
     
     /**
