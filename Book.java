@@ -40,4 +40,17 @@ class Book
         return title;
     }
     
+    //2.84
+    /**
+     * prints author to screen
+     */
+    public void printAuthor(){
+        System.out.println(author);
+    }
+    /**
+     * prints title to screen
+     */
+    public void printTitle(){
+        System.out.println(title);
+    }
 }
