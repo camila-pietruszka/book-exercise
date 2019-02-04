@@ -51,6 +51,7 @@ class Book
         return pages;
     }
     
+    //PRINTING
     //2.84
     /**
      * prints author to screen
@@ -64,6 +65,15 @@ class Book
     public void printTitle(){
         System.out.println(title);
     }
+    //2.87
+    /**
+     * prints author, title, and pages to screen
+     */
+    public void printDetails(){
+        System.out.println("Title: " + title);
+        System.out.println("Author: " + author);
+        System.out.println("Pages: " + pages);
+    }
     
     /**
      * 2.86 - Once the book object is created it is at this point
@@ -72,6 +82,8 @@ class Book
      * view and print them. Since viewing and printing isn't really
      * mutating a variable, Book is immutable. 
      */
+    
+    
     
     
 }
